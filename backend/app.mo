@@ -8,7 +8,7 @@ import Int "mo:base/Int";
 import Text "mo:base/Text";
 import Iter "mo:base/Iter";
 
-import FileStorage "file-storage/file-storage";
+import FileStorage "portoUpload/portoUpload";
 import Http "file-storage/http";
 import Blob "mo:base/Blob";
 

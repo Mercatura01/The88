@@ -1,26 +1,16 @@
-# Hello, world!
+Project Title: The88 – Decentralized Creative Collaboration Platform with Escrow, Milestones, and On-Chain Arbitration
 
-"Hello, world!" projects are a common starting point for developers learning new languages or platforms, as it provides a simple demonstration of how a programming language can be written for an application.
+Problem Statement:
+The creative services economy, including media agencies, freelancers, and influencers, operates globally but remains dependent on centralized intermediaries and unstructured trust. Clients often face delivery issues while creatives risk delayed or missing payments. Dispute resolution is slow, subjective, and rarely protects both sides fairly. There is no programmable infrastructure that guarantees execution, transparency, and trust across the full lifecycle of creative work.
 
-This application's logic is written in [Motoko](https://internetcomputer.org/docs/motoko/main/getting-started/motoko-introduction), a programming language designed specifically for developing canisters on ICP.
+Solution Overview:
+The88 is a fully decentralized platform where agencies, freelancers, influencers, and clients collaborate through escrow-based contracts, milestone payouts, and open bidding. The system uses smart contracts to automate every stage of the workflow, from job posting and selection to payment and dispute resolution. Once a job begins, funds are locked into a sovereign escrow canister that is governed exclusively by the system logic. These canisters are not controlled by any admin or third party. They follow deterministic execution and only release funds based on predefined milestones, confirmations, or arbitration outcomes. The platform is built using ICRC-2 token standards, enabling seamless and secure interactions between users, job contracts, and payout mechanisms. If a dispute arises, it is automatically routed to a set of anonymous validators who operate attested agents and verify the integrity of submitted evidence. Their consensus triggers the appropriate release or refund of funds, with all logic enforced by the underlying smart contract architecture.
 
-## Deploying from ICP Ninja
+Why ICP Enables This Uniquely:
+The88 is only possible on the Internet Computer because it offers full-stack smart contract hosting with native identity, storage, and computation in a unified trust boundary. Internet Identity allows for wallet-free yet verifiable user sessions. ICRC-2 token standards are used to manage balances, approvals, and transfers directly within sovereign canisters, removing reliance on custodial services. These canisters act as autonomous digital agents that execute escrow logic with complete finality. Real-time messaging and low-latency state updates allow the entire platform to function without external APIs, centralized databases, or traditional backend code. The88 represents a pure example of on-chain business infrastructure that serves real-world use cases in a transparent and enforceable way.
 
-When viewing this project in ICP Ninja, you can deploy it directly to the mainnet for free by clicking "Run" in the upper right corner. Open this project in ICP Ninja:
+Tokenomics Model:
+The88 introduces the EIGHT token as the primary utility and coordination mechanism. Clients pay for services in EIGHT or cycles, which are held by the escrow canister and released only upon milestone completion or validated dispute outcomes. Validators earn EIGHT for honest arbitration and are removed from the system if they fail attestation checks. Creators receive 100 percent of their payment with no centralized platform fees. The token will also be used to govern system upgrades, arbitration rules, and validator onboarding thresholds.
 
-[![](https://icp.ninja/assets/open.svg)](https://icp.ninja/i?g=https://github.com/dfinity/examples/motoko/hello_world)
-
-## Project structure
-
-The `/backend` folder contains the Motoko canister, `app.mo`. The `/frontend` folder contains web assets for the application's user interface. The user interface is written with plain JavaScript, but any frontend framework can be used.
-
-Edit the `mops.toml` file to add [Motoko dependencies](https://mops.one/) to the project.
-
-## Build and deploy from the command-line
-
-To migrate your ICP Ninja project off of the web browser and develop it locally, follow these steps. These steps are necessary if you want to deploy this project for long-term, production use on the mainnet.
-
-### 1. Download your project from ICP Ninja using the 'Download files' button on the upper left corner under the pink ninja star icon.
-
-### 2. Open the `BUILD.md` file for further instructions.
-# The88
+Impact and Potential:
+The88 transforms creative collaboration into a programmable, trustless system. It empowers creators to work globally with confidence, gives clients protection and clarity, and introduces a new model of work coordination that is fair, automated, and censorship-resistant. The same model can be applied to adjacent domains like consulting, advertising, publishing, and software contracting. By combining ICRC-2 standards, sovereign smart contracts, and on-chain enforcement, The88 creates the foundation for a new kind of economy—one that runs on code, not trust.
